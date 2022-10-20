@@ -20,9 +20,6 @@ import InputAdornment from '@mui/material/InputAdornment'
 import EyeOutline from 'mdi-material-ui/EyeOutline'
 import EyeOffOutline from 'mdi-material-ui/EyeOffOutline'
 
-// ** Configs
-import themeConfig from '../../configs/themeConfig'
-
 // ** Layout Import
 import BlankLayout from '../../@core/layouts/BlankLayout'
 
@@ -31,7 +28,7 @@ import FooterIllustrationsV1 from '../../views/pages/auth/FooterIllustration'
 
 // ** Styled Components
 const Card = styled(MuiCard)(({ theme }) => ({
-  [theme.breakpoints.up('sm')]: { width: '28rem' }
+  [theme.breakpoints.up('sm')]: { width: '30rem' }
 }))
 
 const LinkStyled = styled('a')(({ theme }) => ({
@@ -63,12 +60,9 @@ const Signup = () => {
     <BlankLayout>
       <Box className='content-center'>
         <Card sx={{ zIndex: 1 }}>
-          <CardContent sx={{ pl:4, paddingRight:4, pt:7, pb:7 }}>
-            <Box sx={{ mb: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Typography variant='h6' sx={{ lineHeight: 1, fontWeight: 600, textTransform: 'uppercase', fontSize: '1.5rem !important' }}>{themeConfig.templateName}</Typography>
-            </Box>
+          <CardContent sx={{ pl:6, paddingRight:6, pt:7, pb:7 }}>
+            <Typography variant='h4' sx={{ lineHeight: 1, fontWeight: 600, marginBottom: 2, textTransform: 'uppercase' }}>Tracking starts here 🚀</Typography>
             <Box sx={{ mb: 3 }}>
-              <Typography variant='h6' sx={{ fontWeight: 400, marginBottom: 0.5 }}>Adventure starts here 🚀</Typography>
               <Typography variant='body2'>Assist in making your presence simple and enjoyable!</Typography>
             </Box>
             <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()}>
@@ -104,7 +98,7 @@ const Signup = () => {
                   Already have an account?
                 </Typography>
                 <Typography variant='body2'>
-                  <Link to='/pages/login'>
+                  <Link to='/signin'>
                     <LinkStyled>Sign in instead</LinkStyled>
                   </Link>
                 </Typography>
