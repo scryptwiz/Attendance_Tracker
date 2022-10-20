@@ -20,9 +20,6 @@ import MuiCard from '@mui/material/Card'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel from '@mui/material/FormControlLabel'
 
-// ** Configs
-import themeConfig from '../../configs/themeConfig'
-
 // ** Layout Import
 import BlankLayout from '../../@core/layouts/BlankLayout'
 

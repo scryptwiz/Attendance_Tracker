@@ -87,7 +87,7 @@ const TotalEarning = () => {
                   mr: 3,
                   width: 40,
                   height: 40,
-                  backgroundColor: theme => `rgba(${theme.palette.customColors.main}, 0.04)`
+                  // backgroundColor: theme => `rgba(${theme.palette.customColors.main}, 0.04)`
                 }}
               >
                 <img src={item.imgSrc} alt={item.title} height={item.imgHeight} />
