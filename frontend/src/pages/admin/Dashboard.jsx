@@ -27,10 +27,10 @@ import LayoutAppBar from '../../@core/layouts/components/vertical/appBar'
 const Dashboard = () => {
   return (
     <Grid container spacing={2}>
-      <Grid item xs={4}>
-        <Typography>Attendance Tracker</Typography>
+      <Grid item xs={3}>
+        <Typography variant="h5" sx={{lineHeight:2,fontWeight:'bold', color:'blueGray'}}>Attendance Tracker</Typography>
       </Grid>
-      <Grid item xs={8}> 
+      <Grid item xs={7}> 
         <Typography>xs=8</Typography>
       </Grid>
     </Grid>
